@@ -1,6 +1,3 @@
-//Password :- NGaOFS0pyGK46N68
-//mongodb :- mongodb+srv://taskapp:<password>@cluster0.yfdjoro.mongodb.net/?retryWrites=true&w=majority
-
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -21,6 +18,7 @@ app.use("/", Routes);
 const MONGODB_URL = "mongodb+srv://taskapp:NGaOFS0pyGK46N68@cluster0.yfdjoro.mongodb.net/task_db?retryWrites=true&w=majority";
 
 const port = 5000;
+
 mongoose
   .connect(MONGODB_URL)
   .then(() => {
